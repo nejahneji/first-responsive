@@ -1,0 +1,11 @@
+.marques {
+    text-align: center;
+    padding: 50px;
+}
+.marques >h1 {
+    margin-bottom: 4vw;
+    
+}
+img{
+    width: 80%;
+}

@@ -1,119 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../components/Button";
+
 import "./Footer.css";
+
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <section className="footer-subscription">
-        <p className="footer-subscription-heading">
-          join the adventure newsletter to recieve our best vacation deals
-        </p>
-        <p className="footer-subscription-text">
-          you can unsubscribe at any time
-        </p>
-        <div className="input-areas">
-          <form>
-            <input
-              type="email"
-              name="email"
-              placeholder="your email"
-              className="footer-input"
-            />
-            <Button buttonStyle="btn--outline">subscribe</Button>
-          </form>
-        </div>
-      </section>
-      <div className="footer-links">
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
-            <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+    <footer id='contact'>
+      
+          <p>Services commercial </p>
+        <div>
+          <div className="contact">
+            <i class="fas fa-phone-volume fa-2x"></i>
+            <p className={{ color: "white" }}>Mr Taha Gargouri : 26855566</p>
           </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+          <div className="contact">
+            <i class="fas fa-phone-volume fa-2x"></i>{" "}
+            <p>Mr Haykal Masmoudi : 26855666</p>
           </div>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+        <div>
+          <div className="contact">
+            <i class="far fa-building fa-2x"></i> <p>74225025</p>{" "}
           </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+          <div className="contact">
+            <i class="far fa-envelope fa-2x"></i>{" "}
+            <p> piecesautos.gt@gmail.com</p>
           </div>
+        </div>
+      
+      <div className="wrapper">
+        <div className="icon instagram ">
+          <div className="tooltip">instagram</div>
+          <span>
+            <a href="https://www.instagram.com/nejah_neji/">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </span>
+        </div>
+
+        <div className="icon facebook">
+          <div className="tooltip">Facebook</div>
+          <span>
+            <a href="https://www.facebook.com/GT-pi%C3%A9ces-autos-108281581758858" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook"></i>
+            </a>
+          </span>
         </div>
       </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              NEJAH
-              <i class='fas fa-user-circle' />
-            </Link>
-          </div>
-          <small class='website-rights'>neji © 2021</small>
-          <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
+      {/* <ScrollButton/> */}
+    </footer>
   );
 };
 

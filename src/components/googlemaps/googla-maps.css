@@ -1,0 +1,15 @@
+.map{
+    /* margin-left: "22%"; */
+    
+    
+     align-items: "center" ;
+     position: relative;
+     width: 90%;
+     height: 50vh;
+     text-align: center;
+     padding: 2vh 2vh;
+     align-self: center;
+}
+.map > h1{
+color: #A54647
+}
